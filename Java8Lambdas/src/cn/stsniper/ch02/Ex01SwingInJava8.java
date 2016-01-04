@@ -23,7 +23,7 @@ public class Ex01SwingInJava8 {
 //		});
 		
 		//After java 8, how we add a action listener for button:
-		jButton1.addActionListener((actionEvent) -> {System.out.println("button clicked");});
+		jButton1.addActionListener(actionEvent -> System.out.println("button clicked"));
 		
 		jFrame.add(jButton1);
 		
