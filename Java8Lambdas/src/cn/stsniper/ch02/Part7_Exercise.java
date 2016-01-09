@@ -9,7 +9,14 @@ import java.util.function.Predicate;
 
 import javax.swing.JButton;
 
-public class Ex15FunctionInterface {
+/**
+ * The Class Part7_Exercise.
+ * 
+ * @author W.Dragon
+ * @since 2016-1-9 17:00:18
+ * @version 0.0.1-SNAPSHOT
+ */
+public class Part7_Exercise {
 	public static void main(String[] args) {
 		//1-b 计算器程序中，会用Function<T, R>接口表示什么样的Lambda表达式
 		Calculator.main(args);
