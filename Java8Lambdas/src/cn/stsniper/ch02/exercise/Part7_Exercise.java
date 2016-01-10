@@ -1,4 +1,4 @@
-package cn.stsniper.ch02;
+package cn.stsniper.ch02.exercise;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

@@ -13,6 +13,13 @@ import cn.stsniper.bean.Album;
 import cn.stsniper.bean.Artist;
 import cn.stsniper.bean.SampleData;
 
+/**
+ * The Class Part5_MultiInvokeStream.
+ * 
+ * @author W.Dragon
+ * @since 2016-1-9 20:13:16
+ * @version 0.0.1-SNAPSHOT
+ */
 public class Part5_MultiInvokeStream {
 	
 	/**

@@ -126,10 +126,10 @@ public class Part3_CommonStreamOperation {
 		//ex3_16中reduce操作的展开：
 		BinaryOperator<Integer> accumulator = (acc, element) -> acc + element;
 		int count = accumulator.apply(
-				accumulator.apply(
-						accumulator.apply(0, 1), 
-						2), 
-				3);
+						accumulator.apply(
+								accumulator.apply(0, 1), 
+								2), 
+						3);
 	}
 	
 	@Test
