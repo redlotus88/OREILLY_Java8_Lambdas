@@ -1,5 +1,6 @@
 package cn.stsniper.ch05;
 
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
@@ -30,6 +31,7 @@ public class Part3_UseCollectors {
 		// 使用toCollection, 用定制的集合收集元素
 		Stream<String> stream = Stream.of("test1", "test2");
 		TreeSet<String> result = stream.collect(Collectors.toCollection(TreeSet::new));
+		System.out.println(result);
 	}
 	
 	@Test
@@ -46,7 +48,8 @@ public class Part3_UseCollectors {
 	@Test
 	public void ex5_7() {
 		// 找出一组专辑上曲目的平均数
-		Assert.assertEquals(2.0d, averageNumberOfTracks(SampleData.albums.collect(Collectors.toList())), 0.0d);
+		Assert.assertEquals(1.5d, averageNumberOfTracks(Arrays.asList(SampleData.aLoveSupreme, 
+				SampleData.sampleShortAlbum)), 0.0d);
 	}
 	
 	public double averageNumberOfTracks(List<Album> albums) {
@@ -83,6 +86,7 @@ public class Part3_UseCollectors {
 		String result = SampleData.getThreeArtists().stream()
 													.map(Artist::getName)
 													.collect(Collectors.joining(",", "[", "]"));
+		Assert.assertEquals("[John Coltrane,John Lennon,The Beatles]", result);
 	}
 	
 	@Test
